@@ -23,10 +23,10 @@ def play():
   print("放馬過來吧，區區coder，不足為奇")
   count = 0
   final = 0
-  while count<8:
-    if count == 7:
+  while count<7:
+    if count == 6:
       print("剩最後一次囉，我可不會同情你的歐\n")
-    arr = input("請猜4個數字（各為0~9, 數字間不能重複） : ")
+    arr = input("請猜4個數字（各為0~9, 數字間不能重複, 數字間也不用有間隔） : ")
     your_ans = []
     for chr in arr:
       your_ans.append(int(chr))
@@ -47,7 +47,7 @@ def play():
     count+=1
   if final:
     util.cbc_print("\n竟然...好啦，至少你讓我獲得快樂，我這就給你最終解答吧，下次不會讓你贏的!!!!\n")
-    util.cbc_print("\n!!!I LOVE SITCON HACKATHON 2024!!!\n\n")
+    util.cbc_print("\nAns: I LOVE SITCON HACKATHON 2024\n\n")
     return 1
   else:
     util.cbc_print("哈，太菜了，下次再來吧 ( ´∀`)\n")
